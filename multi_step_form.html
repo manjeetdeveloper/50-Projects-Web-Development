@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mlti Stap Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(/assets/img/thumb-1920-85305.jpg);
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .container {
+
+            width: 360px;
+            height: 500px;
+            background-color: white;
+            border-radius: 7px;
+            position: relative;
+            margin: 8% auto;
+            overflow: hidden;
+
+            /* position: absolute;
+    top: 0;
+    right: 0; */
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .container form {
+            width: 280px;
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            transition: 1s;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px 5px;
+            margin: 5px 0;
+            border: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .btn-box {
+            width: 100%;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        form button {
+            width: 110px;
+            height: 35px;
+            border-radius: 50px;
+            margin: 0 10px;
+            background: linear-gradient(to right, #DFA3FF, #B429FF);
+            color: white;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        #form2 {
+            left: 450px;
+        }
+
+        #form3 {
+            left: 450px;
+        }
+
+        .step-row {
+            width: 360px;
+            height: 40px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 -1px 5px -1px black;
+            position: relative;
+        }
+
+        .step-col {
+            width: 120px;
+            text-align: center;
+            position: relative;
+
+        }
+
+        #progress {
+            position: absolute;
+            width: 120px;
+            height: 100%;
+            background: linear-gradient(to right, #DFA3FF, #B429FF);
+            transition: 0.5s;
+        }
+
+        #progress::after {
+            content: '';
+            height: 0;
+            width: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            position: absolute;
+            right: -20px;
+            top: 0;
+            border-left: 20px solid #B429FF;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form1">
+            <h3>PERSONAL DETAILS</h3>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Mobile Number">
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+        </form>
+
+        <form id="form2">
+            <h3>SOCIAL LINKS</h3>
+            <input type="text" placeholder="Facebook">
+            <input type="text" placeholder="Instagram">
+            <input type="text" placeholder="Twitter">
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+        </form>
+        <form id="form3">
+            <h3>CREATE AN ACCOUNT</h3>
+            <input type="text" placeholder="Email Address">
+            <input type="password" placeholder="password">
+            <input type="password" placeholder="Conform password">
+
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+
+
+        <div class="step-row">
+            <div id="progress"></div>
+
+
+
+
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+        </div>
+
+
+    </div>
+
+    <script>
+
+
+        var form1 = document.getElementById('form1');
+        var form2 = document.getElementById('form2');
+        var form3 = document.getElementById('form3');
+
+        var next1 = document.getElementById('next1');
+        var next2 = document.getElementById('next2');
+
+        var back1 = document.getElementById('back1');
+        var back2 = document.getElementById('back2');
+
+        var progress = document.getElementById('progress');
+
+        next1.onclick = function () {
+            form1.style.left = "-450px";
+            form2.style.left = "40px";
+            progress.style.width = "240px";
+        }
+
+
+        back1.onclick = function () {
+            form1.style.left = "40px";
+            form2.style.left = "450px";
+            progress.style.width = "120px";
+        }
+
+        next2.onclick = function () {
+            form2.style.left = "-450px";
+            form3.style.left = "40px";
+            progress.style.width = "360px";
+        }
+        back2.onclick = function () {
+            form2.style.left = "40px";
+            form3.style.left = "450px";
+            progress.style.width = "240px";
+        }
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
