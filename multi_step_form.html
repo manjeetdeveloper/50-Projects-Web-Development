@@ -149,7 +149,7 @@
 
             <div class="btn-box">
                 <button type="button" id="back2">Back</button>
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="clicked()">Submit</button>
             </div>
         </form>
 
@@ -208,7 +208,9 @@
             progress.style.width = "240px";
         }
 
-
+       function clicked() {
+           console.log('This button was click')
+       } 
 
 
 
