@@ -31,6 +31,14 @@
             background-color: var(--secondary-color);
         }
 
+        .creator {
+            text-align: center;
+            /* justify-content: center; */
+            font-size: 23px;
+            
+        }
+        
+
         .search {
             background-color: transparent;
             border: 2px solid var(--primary-color);
@@ -125,6 +133,7 @@
 <body>
     <header>
         <form id="form">
+            <h1 class="creator">Manjeet Kumar</h1>
             <input type="text" id="search" class="search" placeholder="Search">
         </form>
     </header>
@@ -139,7 +148,6 @@
         const form = document.getElementById('form')
         const search = document.getElementById('search')
 
-        // Get initial movies
         getMovies(API_URL)
 
         async function getMovies(url) {
