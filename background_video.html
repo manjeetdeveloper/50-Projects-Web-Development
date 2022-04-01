@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video</title>
+    <style>
+        .nav {
+            position: fixed;
+            background-color: #222;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 7px 15px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav.active {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav.active a {
+            color: #000;
+        }
+
+        .nav.active .container {
+            padding: 10px 0;
+        }
+
+        .nav a.current,
+        .nav a:hover {
+            color: #e73623;
+            font-weight: bold;
+        }
+
+
+        #videoBG {
+            position: fixed;
+            z-index: -1;
+        }
+
+        @media (min-aspect-ratio:16/9) {
+            #videoBG {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-aspect-ratio:16/9) {
+            #videoBG {
+                width: auto;
+                height: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="/index.html">WebyRoot</a></h1>
+            <ul>
+                <li><a href="sticky_navigation.html" class="current">Home</a></li>
+                <li><a href="rotating_navigation.html">About</a></li>
+                <li><a href="multi_step_form.html">Services</a></li>
+                <li><a href="github_profile.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="navbar"><span>Webyroot</span></div> -->
+
+    <video id="videoBG" poster="/assets/img/img/011947436-crowd-people.jpg" autoplay muted loop>
+        <source src="/assets/A guy working in an office that is decorated for Christmas.mp4" type="video/mp4">
+    </video>
+    <div id="textdiv">
+        <h1 class="head">Webyroot Pvt.Ltd</h1>
+
+    </div>
+</body>
+
+</html>
