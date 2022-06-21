@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.11/tailwind.min.css"
         integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w=="
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
     <title>Password Strength Backround</title>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -18,6 +19,8 @@
         body {
             display: flex;
             flex-direction: column;
+            color: #34eb64;
+            font-weight: 500;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -25,8 +28,9 @@
             margin: 0;
         }
 
+
         .background {
-            background: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b') no-repeat center center/cover;
+            background: url('/assets/img/adam-le-sommer-afAfv1Ps5Hc-unsplash.jpg') no-repeat center center/cover;
             position: absolute;
             top: -20px;
             bottom: -20px;
@@ -39,6 +43,7 @@
 </head>
 
 <body>
+
     <div class="background" id="background"></div>
     <div class="bg-white rounded p-10 text-center shadow-md">
         <h1 class="text-3xl">Image Password Strength</h1>
