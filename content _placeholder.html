@@ -15,7 +15,7 @@
         body {
             background-color: #ecf0f1;
             font-family: 'Roboto', sans-serif;
-            display: flex;
+            display: fl;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -54,13 +54,13 @@
             margin: 0;
         }
 
-        .card-excerpt {
+        .card-cerpt {
             color: #777;
             margin: 10px 0 20px;
         }
 
         .author {
-            display: flex;
+            display: fl;
         }
 
         .profile-img {
@@ -71,8 +71,8 @@
         }
 
         .author-info {
-            display: flex;
-            flex-direction: column;
+            display: fl;
+            fl-direction: column;
             justify-content: space-around;
             margin-left: 10px;
             width: 100px;
@@ -93,7 +93,7 @@
             animation: bgPos 1s linear infinite;
         }
 
-        .animated-bg-text {
+        .animated-bg-tt {
             border-radius: 50px;
             display: inline-block;
             margin: 0;
@@ -118,20 +118,20 @@
         <div class="card-header animated-bg" id="header">&nbsp;</div>
 
         <div class="card-content">
-            <h3 class="card-title animated-bg animated-bg-text" id="title">
+            <h3 class="card-title animated-bg animated-bg-tt" id="title">
                 &nbsp;
             </h3>
-            <p class="card-excerpt" id="excerpt">
+            <p class="card-cerpt" id="cerpt">
                 &nbsp;
-                <span class="animated-bg animated-bg-text">&nbsp;</span>
-                <span class="animated-bg animated-bg-text">&nbsp;</span>
-                <span class="animated-bg animated-bg-text">&nbsp;</span>
+                <span class="animated-bg animated-bg-tt">&nbsp;</span>
+                <span class="animated-bg animated-bg-tt">&nbsp;</span>
+                <span class="animated-bg animated-bg-tt">&nbsp;</span>
             </p>
             <div class="author">
                 <div class="profile-img animated-bg" id="profile_img">&nbsp;</div>
                 <div class="author-info">
-                    <strong class="animated-bg animated-bg-text" id="name">&nbsp;</strong>
-                    <small class="animated-bg animated-bg-text" id="date">&nbsp;</small>
+                    <strong class="animated-bg animated-bg-tt" id="name">&nbsp;</strong>
+                    <small class="animated-bg animated-bg-tt" id="date">&nbsp;</small>
                 </div>
             </div>
         </div>
@@ -140,21 +140,21 @@
     <script>
         const header = document.getElementById('header')
         const title = document.getElementById('title')
-        const excerpt = document.getElementById('excerpt')
+        const cerpt = document.getElementById('cerpt')
         const profile_img = document.getElementById('profile_img')
         const name = document.getElementById('name')
         const date = document.getElementById('date')
 
         const animated_bgs = document.querySelectorAll('.animated-bg')
-        const animated_bg_texts = document.querySelectorAll('.animated-bg-text')
+        const animated_bg_tts = document.querySelectorAll('.animated-bg-tt')
 
         setTimeout(getData, 2500)
 
         function getData() {
-            header.innerHTML =
+            header.innerHTML =1
                 '<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="Manjeet">'
             title.innerHTML = 'Lorem ipsum dolor sit amet'
-            excerpt.innerHTML =
+            cerpt.innerHTML =
                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
             profile_img.innerHTML =
                 '<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="manjeet2">'
@@ -162,7 +162,7 @@
             date.innerHTML = 'Mar 25, 2022'
 
             animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'))
-            animated_bg_texts.forEach((bg) => bg.classList.remove('animated-bg-text'))
+            animated_bg_tts.forEach((bg) => bg.classList.remove('animated-bg-tt'))
         }
 
     </script>

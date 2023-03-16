@@ -21,8 +21,8 @@
             background-color: #3494e4;
             color: #fff;
             font-family: 'Montserrat', sans-serif;
-            display: flex;
-            flex-direction: column;
+            display: fl;
+            fl-direction: column;
             align-items: center;
             margin-bottom: 40px;
         }
@@ -44,8 +44,8 @@
             height: 330px;
             width: 150px;
             margin: 30px 0;
-            display: flex;
-            flex-direction: column;
+            display: fl;
+            fl-direction: column;
             overflow: hidden;
         }
 
@@ -58,7 +58,7 @@
             font-size: 14px;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            tt-align: center;
             margin: 5px;
             transition: 0.3s ease;
         }
@@ -69,20 +69,20 @@
         }
 
         .cups {
-            display: flex;
-            flex-wrap: wrap;
+            display: fl;
+            fl-wrap: wrap;
             align-items: center;
             justify-content: center;
             width: 280px;
         }
 
         .remained {
-            display: flex;
-            flex-direction: column;
+            display: fl;
+            fl-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            flex: 1;
+            tt-align: center;
+            fl: 1;
             transition: 0.3s ease;
         }
 
@@ -97,7 +97,7 @@
 
         .percentage {
             background-color: var(--fill-color);
-            display: flex;
+            display: fl;
             align-items: center;
             justify-content: center;
             font-weight: bold;
@@ -106,8 +106,8 @@
             transition: 0.3s ease;
         }
 
-        .text {
-            text-align: center;
+        .tt {
+            tt-align: center;
             margin: 0 0 5px;
         }
     </style>
@@ -126,7 +126,7 @@
         <div class="percentage" id="percentage"></div>
     </div>
 
-    <p class="text">Select how many glasses of water that you have drank</p>
+    <p class="tt">Select how many glasses of water that you have drank</p>
 
     <div class="cups">
         <div class="cup cup-small">250 ml</div>
@@ -154,7 +154,7 @@
 
         function highlightCups(idx) {
             if (idx === 7 && smallCups[idx].classList.contains("full")) idx--;
-            else if (smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')) {
+            else if (smallCups[idx].classList.contains('full') && !smallCups[idx].ntElementSibling.classList.contains('full')) {
                 idx--
             }
 
@@ -179,7 +179,7 @@
             } else {
                 percentage.style.visibility = 'visible'
                 percentage.style.height = `${fullCups / totalCups * 330}px`
-                percentage.innerText = `${fullCups / totalCups * 100}%`
+                percentage.innerTt = `${fullCups / totalCups * 100}%`
             }
 
             if (fullCups === totalCups) {
@@ -187,7 +187,7 @@
                 remained.style.height = 0
             } else {
                 remained.style.visibility = 'visible'
-                liters.innerText = `${2 - (250 * fullCups / 1000)}L`
+                liters.innerTt = `${2 - (250 * fullCups / 1000)}L`
             }
         }
     </script>

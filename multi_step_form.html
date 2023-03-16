@@ -31,7 +31,7 @@
         }
 
         h3 {
-            text-align: center;
+            tt-align: center;
             margin-bottom: 40px;
         }
 
@@ -56,7 +56,7 @@
         .btn-box {
             width: 100%;
             margin: 30px auto;
-            text-align: center;
+            tt-align: center;
         }
 
         form button {
@@ -83,7 +83,7 @@
             width: 360px;
             height: 40px;
             margin: 0 auto;
-            display: flex;
+            display: fl;
             align-items: center;
             box-shadow: 0 -1px 5px -1px black;
             position: relative;
@@ -91,7 +91,7 @@
 
         .step-col {
             width: 120px;
-            text-align: center;
+            tt-align: center;
             position: relative;
 
         }
@@ -123,27 +123,27 @@
     <div class="container">
         <form id="form1">
             <h3>PERSONAL DETAILS</h3>
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="Mobile Number">
+            <input type="tt" placeholder="First Name">
+            <input type="tt" placeholder="Last Name">
+            <input type="tt" placeholder="Mobile Number">
             <div class="btn-box">
-                <button type="button" id="next1">Next</button>
+                <button type="button" id="nt1">Nt</button>
             </div>
         </form>
 
         <form id="form2">
             <h3>SOCIAL LINKS</h3>
-            <input type="text" placeholder="Facebook">
-            <input type="text" placeholder="Instagram">
-            <input type="text" placeholder="Twitter">
+            <input type="tt" placeholder="Facebook">
+            <input type="tt" placeholder="Instagram">
+            <input type="tt" placeholder="Twitter">
             <div class="btn-box">
                 <button type="button" id="back1">Back</button>
-                <button type="button" id="next2">Next</button>
+                <button type="button" id="nt2">Nt</button>
             </div>
         </form>
         <form id="form3">
             <h3>CREATE AN ACCOUNT</h3>
-            <input type="text" placeholder="Email Address">
+            <input type="tt" placeholder="Email Address">
             <input type="password" placeholder="password">
             <input type="password" placeholder="Conform password">
 
@@ -176,15 +176,15 @@
         var form2 = document.getElementById('form2');
         var form3 = document.getElementById('form3');
 
-        var next1 = document.getElementById('next1');
-        var next2 = document.getElementById('next2');
+        var nt1 = document.getElementById('nt1');
+        var nt2 = document.getElementById('nt2');
 
         var back1 = document.getElementById('back1');
         var back2 = document.getElementById('back2');
 
         var progress = document.getElementById('progress');
 
-        next1.onclick = function () {
+        nt1.onclick = function () {
             form1.style.left = "-450px";
             form2.style.left = "40px";
             progress.style.width = "240px";
@@ -197,7 +197,7 @@
             progress.style.width = "120px";
         }
 
-        next2.onclick = function () {
+        nt2.onclick = function () {
             form2.style.left = "-450px";
             form3.style.left = "40px";
             progress.style.width = "360px";

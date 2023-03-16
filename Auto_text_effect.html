@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Text Effect</title>
+    <title>Auto Tt Effect</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -15,8 +15,8 @@
         body {
             background-color: darksalmon;
             font-family: 'Roboto', sans-serif;
-            display: flex;
-            flex-direction: column;
+            display: fl;
+            fl-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -38,7 +38,7 @@
             font-size: 18px;
             background-color: darksalmon;
             border: none;
-            text-align: center;
+            tt-align: center;
         }
 
         input:focus {
@@ -48,7 +48,7 @@
 </head>
 
 <body>
-    <h1 id="text">Starting...</h1>
+    <h1 id="tt">Starting...</h1>
 
     <div>
         <label for="speed">Speed:</label>
@@ -56,24 +56,24 @@
     </div>
 
     <script>
-        const textEl = document.getElementById('text')
+        const ttEl = document.getElementById('tt')
         const speedEl = document.getElementById('speed')
-        const text = 'We Love ❤️ Programming 💻! On My Computer 💻:The 18 Best Advertisements & Ad Campaigns of All Time'
+        const tt = 'We Love ❤️ Programming 💻! On My Computer 💻:The 18 Best Advertisements & Ad Campaigns of All Time'
         let idx = 1
         let speed = 300 / speedEl.value
 
-        writeText()
+        writeTt()
 
-        function writeText() {
-            textEl.innerText = text.slice(0, idx)
+        function writeTt() {
+            ttEl.innerTt = tt.slice(0, idx)
 
             idx++
 
-            if (idx > text.length) {
+            if (idx > tt.length) {
                 idx = 1
             }
 
-            setTimeout(writeText, speed)
+            setTimeout(writeTt, speed)
         }
 
 

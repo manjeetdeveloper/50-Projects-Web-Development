@@ -17,7 +17,7 @@
 }
 
 a,a:hover {
-    text-decoration: none;
+    tt-decoration: none;
 
 }
 
@@ -38,8 +38,8 @@ ul,ol {
     --secondry-color:#43121d;
     --third-color:#f98169;
     --white-color:#fff;
-    --text-color: #555;
-    --text-gray:#999;
+    --tt-color: #555;
+    --tt-gray:#999;
     --black-color: #000;
     --primary-font: 'Roboto',sans-serif;
     --secondry-color: 'Quicksand',sans-serif;
@@ -88,7 +88,7 @@ h1 {
 h2 {
     font-weight: 700;
     font-size: 2.25rem;
-    text-transform: capitalize;
+    tt-transform: capitalize;
     font-family: var(--secondry-font);
     color: var(--secondry-color);
     line-height: 3rem;
@@ -97,7 +97,7 @@ h2 {
 h4 {
     color: var(--secondry-color);
     font-family: var(--secondry-font);
-    text-transform: capitalize;
+    tt-transform: capitalize;
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 0.05rem;
@@ -105,7 +105,7 @@ h4 {
 
 h5 {
     color: var(--primary-color);
-    text-transform: capitalize;
+    tt-transform: capitalize;
     font-family: var(--secondry-font);
     font-size: 1rem;
     font-weight: 700;
@@ -114,7 +114,7 @@ h5 {
 
 p {
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--tt-color);
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: 1px;
@@ -129,7 +129,7 @@ p {
     color: var(--white-color);
     font-size: 0.9375rem;
     font-weight: 600;
-    text-transform: capitalize;
+    tt-transform: capitalize;
     box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
     -webkit-transition: all .4s ease-out 0s;
     -o-transition: all .4s ease-out 0s;
@@ -142,10 +142,10 @@ p {
     line-height: 25px;
     background-color: var(--white-color);
     border: 0.1875rem solid var(--white-color);
-    color: var(--text-color);
+    color: var(--tt-color);
     font-size: 0.9375rem;
     font-weight: 600;
-    text-transform:capitalize;
+    tt-transform:capitalize;
     box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
     -webkit-transition: all .4s ease-out 0s;
     -o-transition: all .4s ease-out 0s;
@@ -170,12 +170,12 @@ p {
     padding-bottom: 8.25rem;
 }
 
-.text-content {
+.tt-content {
     width: 70%;
     margin: auto;
 }
 
-.counter-section h2,.testimonial-section h2,.book-food-text h2 {
+.counter-section h2,.testimonial-section h2,.book-food-tt h2 {
     color: var(--white-color);
 }
 
@@ -187,7 +187,7 @@ p {
     position: fixed;
     width: 100%;
     left: 0;
-    z-index: 1000;
+    z-ind: 1000;
     --webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
@@ -205,7 +205,7 @@ p {
 .nav-link {
     font-size: 0.9375rem;
     font-weight: 600;
-    text-transform: capitalize;
+    tt-transform: capitalize;
     color: var(--primary-color);
     letter-spacing: 1px;
 }
@@ -250,7 +250,7 @@ p {
 
 .counter-section p {
     color: var(--white-color);
-    text-transform: uppercase;
+    tt-transform: uppercase;
 }
 
 /* about section Design  */
@@ -261,7 +261,7 @@ p {
 .about-section .card img{
     border-radius: 0.625rem;
 }
-.about-section .text-sec{
+.about-section .tt-sec{
     padding-left: 2rem;
 }
 
@@ -272,7 +272,7 @@ p {
 }
 .food-type ul li {
     font-size: 1rem;
-    color: var(--text-color);
+    color: var(--tt-color);
     line-height: 32px;
     position: relative;
     margin-left: 30px;
@@ -295,28 +295,28 @@ p {
     background: url(/assets/img/images/bg/bg-2.jpg) no-repeat center;
     background-size: cover;
     padding-top: 100px;
-    text-align: center;
+    tt-align: center;
 }
 .story-section h2{
     color: var(--primary-color);
 }
 
 /* =============== */
-/* expolor food section Design  */
+/* polor food section Design  */
 /* ================== */
 
-.explore-food .card {
+.plore-food .card {
     border:none;
     background-color: transparent;
     border-radius: 0.9375rem;
 
 }
-.explore-food .card img {
+.plore-food .card img {
     border-radius: 0.9375rem;
     object-fit: cover;
 }
 
-.explore-food.card span {
+.plore-food.card span {
     display:  none;
     font-size: 1.5rem;
     font-weight: 700;
@@ -324,8 +324,8 @@ p {
     padding-bottom: 1rem;
     border-bottom: 0.0625rem solid #eee;
 }
-.explore-food .card span del {
-    color: var(--text-gray);
+.plore-food .card span del {
+    color: var(--tt-gray);
     margin-left: 0.5rem;
 }
  
@@ -339,7 +339,7 @@ p {
     padding: 10rem 3.125rem;
     background-color: var(--white-color);
     border-radius: 0.9375rem;
-    text-align: center;
+    tt-align: center;
 }
 
 .testimonial-section .carousel-caption img{
@@ -402,7 +402,7 @@ p {
         border: none;
         border-radius: 0;
         background: transparent;
-        border: 0.1875rem solid var(--text-gray);
+        border: 0.1875rem solid var(--tt-gray);
         color: var(--black-color);
         font-weight: 700;
     }

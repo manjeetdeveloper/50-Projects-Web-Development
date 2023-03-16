@@ -39,8 +39,8 @@
         .left-slide>div {
             height: 100%;
             width: 100%;
-            display: flex;
-            flex-direction: column;
+            display: fl;
+            fl-direction: column;
             align-items: center;
             justify-content: center;
             color: #fff;
@@ -90,11 +90,11 @@
             position: absolute;
             left: 35%;
             top: 50%;
-            z-index: 100;
+            z-ind: 100;
         }
 
         .slider-container .action-buttons .down-button {
-            transform: translateX(-100%);
+            transform: translat(-100%);
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
         }
@@ -164,7 +164,7 @@
         const downButton = document.querySelector('.down-button')
         const slidesLength = slideRight.querySelectorAll('div').length
 
-        let activeSlideIndex = 0
+        let activeSlideInd = 0
 
         slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`
 
@@ -174,19 +174,19 @@
         const changeSlide = (direction) => {
             const sliderHeight = sliderContainer.clientHeight
             if (direction === 'up') {
-                activeSlideIndex++
-                if (activeSlideIndex > slidesLength - 1) {
-                    activeSlideIndex = 0
+                activeSlideInd++
+                if (activeSlideInd > slidesLength - 1) {
+                    activeSlideInd = 0
                 }
             } else if (direction === 'down') {
-                activeSlideIndex--
-                if (activeSlideIndex < 0) {
-                    activeSlideIndex = slidesLength - 1
+                activeSlideInd--
+                if (activeSlideInd < 0) {
+                    activeSlideInd = slidesLength - 1
                 }
             }
 
-            slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
-            slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
+            slideRight.style.transform = `translateY(-${activeSlideInd * sliderHeight}px)`
+            slideLeft.style.transform = `translateY(${activeSlideInd * sliderHeight}px)`
         }
 
     </script>

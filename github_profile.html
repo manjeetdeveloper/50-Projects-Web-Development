@@ -17,8 +17,8 @@
             background-color: #2a2a72;
             color: #fff;
             font-family: 'Poppins', sans-serif;
-            display: flex;
-            flex-direction: column;
+            display: fl;
+            fl-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -60,7 +60,7 @@
             border-radius: 20px;
             box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
                 0 15px 40px rgba(0, 0, 0, 0.1);
-            display: flex;
+            display: fl;
             padding: 3rem;
             margin: 0 1.5rem;
         }
@@ -83,14 +83,14 @@
 
         .user-info ul {
             list-style-type: none;
-            display: flex;
+            display: fl;
             justify-content: space-between;
             padding: 0;
             max-width: 400px;
         }
 
         .user-info ul li {
-            display: flex;
+            display: fl;
             align-items: center;
         }
 
@@ -100,7 +100,7 @@
         }
 
         .repo {
-            text-decoration: none;
+            tt-decoration: none;
             color: #fff;
             background-color: #212a72;
             font-size: 0.7rem;
@@ -112,7 +112,7 @@
 
         @media (max-width: 500px) {
             .card {
-                flex-direction: column;
+                fl-direction: column;
                 align-items: center;
             }
 
@@ -125,7 +125,7 @@
 
 <body>
     <form class="user-form" id="form">
-        <input type="text" id="search" placeholder="Search a Github User">
+        <input type="tt" id="search" placeholder="Search a Github User">
     </form>
 
 
@@ -212,7 +212,7 @@
                     repoEl.classList.add('repo')
                     repoEl.href = repo.html_url
                     repoEl.target = '_blank'
-                    repoEl.innerText = repo.name
+                    repoEl.innerTt = repo.name
 
                     reposEl.appendChild(repoEl)
                 })

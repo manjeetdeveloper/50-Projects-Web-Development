@@ -17,7 +17,7 @@
             background-color: #8e44ad;
             color: #fff;
             font-family: 'Roboto Mono', sans-serif;
-            display: flex;
+            display: fl;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -26,9 +26,9 @@
         }
 
         .counter-container {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+            display: fl;
+            fl-direction: column;
+            tt-align: center;
             margin: 30px 50px;
         }
         .counter {
@@ -38,7 +38,7 @@
 
         @media (max-width:580px) {
             body {
-                flex-direction: column;
+                fl-direction: column;
             }
         }
 
@@ -70,19 +70,19 @@
       const counters = document.querySelectorAll('.counter')
 
 counters.forEach(counter => {
-    counter.innerText = '0'
+    counter.innerTt = '0'
 
     const updateCounter = () => {
         const target = +counter.getAttribute('data-target')
-        const c = +counter.innerText
+        const c = +counter.innerTt
 
         const increment = target / 200
 
         if(c < target) {
-            counter.innerText = `${Math.ceil(c + increment)}`
+            counter.innerTt = `${Math.ceil(c + increment)}`
             setTimeout(updateCounter, 1)
         } else {
-            counter.innerText = target
+            counter.innerTt = target
         }
     }
 

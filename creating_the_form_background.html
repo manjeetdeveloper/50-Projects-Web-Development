@@ -17,17 +17,19 @@
         }
 
         body {
-            display: flex;
+            display:flex;
             flex-direction: column;
-            color: #34eb64;
+            color: #f78c00;
             font-weight: 500;
+            line-height: 40px;
             align-items: center;
             justify-content: center;
             height: 100vh;
             overflow: hidden;
-            margin: 0;
+           
+            
         }
-
+       
 
         .background {
             background: url('/assets/img/adam-le-sommer-afAfv1Ps5Hc-unsplash.jpg') no-repeat center center/cover;
@@ -43,27 +45,29 @@
 </head>
 
 <body>
+    <div class="container">
 
     <div class="background" id="background"></div>
     <div class="bg-white rounded p-10 text-center shadow-md">
         <h1 class="text-3xl">Image Password Strength</h1>
-        <p class="text-sm text-gray-700">Change the password to see the effect</p>
+        <p class="text-sm tt-gray-700">Change the password to see the effect</p>
 
-        <div class="my-4 text-left">
+        <div class="my-4 tt-left">
             <label for="email" class="text-gray-900">Email:</label>
-            <input type="text" class="border block w-full p-2 mt-2 rounded" id="email" placeholder="manjeetkyp24@gmail.com">
+            <input type="tt" class="border block w-full p-2 mt-2 rounded" id="email" placeholder="manjeetkyp24@gmail.com">
         </div>
 
-        <div class="my-4 text-left">
-            <label for="email" class="text-gray-900">Password:</label>
+        <div class="my-4 tt-left">
+            <label for="email" class="tt-gray-900">Password:</label>
             <input type="password" class="border block w-full p-2 mt-2 rounded" id="password"
                 placeholder="Enter Password">
         </div>
 
-        <button class="bg-black text-white py-2 mt-4 inline-block w-full rounded" type="submit">
+        <button class="bg-black tt-white py-2 mt-4 inline-block w-full rounded" type="submit">
             Submit
         </button>
     </div>
+</div>
 
     <script>
 

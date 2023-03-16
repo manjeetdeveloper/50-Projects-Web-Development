@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Ubuntu', sans-serif;
-            display: flex;
+            display: fl;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -33,7 +33,7 @@
             filter: blur(0px);
         }
 
-        .loading-text {
+        .loading-tt {
             font-size: 50px;
             color: #fff;
         }
@@ -42,10 +42,11 @@
 
 <body>
     <section class="bg"></section>
-    <div class="loading-text">0%</div>
+    
+    <div class="loading-tt">0%</div>
 
     <script>
-        const loadText = document.querySelector('.loading-text')
+        const loadTt = document.querySelector('.loading-tt')
         const bg = document.querySelector('.bg')
 
         let load = 0
@@ -59,8 +60,8 @@
                 clearInterval(int)
             }
 
-            loadText.innerText = `${load}%`
-            loadText.style.opacity = scale(load, 0, 100, 1, 0)
+            loadTt.innerTt = `${load}%`
+            loadTt.style.opacity = scale(load, 0, 100, 1, 0)
             bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
         }
 
